@@ -52,4 +52,12 @@ fun main() {
         println("Usuário não autorizado")
     }
 
+    val calculadora = CalculadoraBonificacao()
+    calculadora.registra(bruno)
+    calculadora.registra(claudemir)
+    calculadora.registra(gui)
+
+    println("Total de bonificação: ${calculadora.total}")
+
+
 }
