@@ -52,10 +52,26 @@ fun main() {
         println("Usuário não autorizado")
     }
 
+    println("================================================")
+
+    val maria = Analista(
+        nome = "Maria",
+        salario = 6000.0,
+        cpf = "157.878.878-56"
+    )
+
+    println("Nome: ${maria.nome}")
+    println("CPF: ${maria.cpf}")
+    println("Salario: ${maria.salario}")
+    println("Bonificação: ${maria.bonificacao()}")
+
     val calculadora = CalculadoraBonificacao()
     calculadora.registra(bruno)
     calculadora.registra(claudemir)
     calculadora.registra(gui)
+    calculadora.registra(maria)
+
+    println("================================================")
 
     println("Total de bonificação: ${calculadora.total}")
 
