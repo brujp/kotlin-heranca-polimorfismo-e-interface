@@ -4,8 +4,9 @@ open class Funcionario( //Open serve para que consigamos herdar a classe Funcion
     val salario: Double
 ) {
 
-    fun bonificacao(): Double {
-        return salario * 0.1
-    }
+    open val bonificacao: Double //Open possibilita override em outras classes
+        get() {
+            return salario * 0.1
+        }
 
 }
