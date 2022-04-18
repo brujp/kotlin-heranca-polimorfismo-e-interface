@@ -1,4 +1,4 @@
-open class Funcionario( //Open serve para que consigamos herdar a classe Funcionario em outra classe
+abstract class Funcionario(
     val nome: String,
     val cpf: String,
     val salario: Double

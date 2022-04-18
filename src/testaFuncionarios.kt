@@ -1,6 +1,10 @@
 fun testaFuncionarios() {
-    val bruno = Funcionario(
-        nome = "Bruno", cpf = "465.514.428-97", salario = 7000.0
+
+    //Criando um funcionário Analista
+    val bruno: Funcionario = Analista(
+        nome = "Bruno",
+        cpf = "465.514.428-97",
+        salario = 7000.0
     )
 
     println("Nome: ${bruno.nome}")
@@ -10,6 +14,7 @@ fun testaFuncionarios() {
 
     println("================================================")
 
+    //Criando um funcionário Gerente
     val claudemir = Gerente(
         nome = "Claudemir",
         cpf = "151.578.878.97",
@@ -30,6 +35,7 @@ fun testaFuncionarios() {
 
     println("================================================")
 
+    //Criando um funcionário Diretor
     val gui = Diretor(
         nome = "Guilherme",
         cpf = "151.743.434.56",
@@ -52,6 +58,7 @@ fun testaFuncionarios() {
 
     println("================================================")
 
+    //Criando um funcionário Analista
     val maria = Analista(
         nome = "Maria",
         salario = 6000.0,
